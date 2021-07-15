@@ -21,7 +21,7 @@ class AboutMe extends Component {
                 <div id='backgroundContainer'>
                     <p id='backgroundHeader'>Background</p>
                     <p id='background'>
-                        Hello! My name is Kolby and I'm a Full Stack Software Engineer based out of Washington State.
+                        Hello! My name is Kolby Evans, and I'm a Full Stack Software Engineer based out of Washington State.
                          I started programming around 2013 in Java because I wanted to make games.
                          I spent a few years as a hobby learning basic Java along with some C# but eventually, I would abandon that path and join the U.S. Armed Forces as a grunt in the Army.
                          <br></br>

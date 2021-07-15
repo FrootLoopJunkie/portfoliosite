@@ -46,7 +46,14 @@ class App extends Component {
         />}
         {this.state.currentPage === 'aboutMe' && <AboutMe/>}
         <div id='footer'>
-          <span id='footerText'>Email: Kolbyblade@gmail.com | Twitter: @FrootLoopJunkie | Github: @FrootLoopJunkie </span>  
+          <span id='footerText'>
+          <a class='link' href='https://docs.google.com/document/d/1kRjimEuAwbmM3VPDxrxHSRK1NVXAOGRNYd6Gy4XKYyA/edit?usp=sharing'>Resume </a> 
+          | Email: <a class='link' href='mailto: Kolbyblade@gmail.com'>Kolbyblade@gmail.com </a> 
+          | Twitter: <a class='link' href='https://twitter.com/FrootLoopJunkie'>@FrootLoopJunkie </a> 
+          | Github: <a class='link' href='https://github.com/FrootLoopJunkie'>@FrootLoopJunkie </a> 
+          | LinkedIn: <a class='link' href='https://www.linkedin.com/in/kolby-evans-048599207/'>Kolby Evans </a> 
+          
+          </span>  
         </div>
       </div>
     );
