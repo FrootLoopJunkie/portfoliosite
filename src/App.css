@@ -1,38 +1,217 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Open+Sans&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Bungee', cursive;
+}
+
+body{
+  background: #1D1128;
+}
+
+p{
+  white-space:pre-wrap;
+}
+
+#topbar{
+  background: #2d1a3d;
+  height: 8vh;
+  overflow: hidden;
+}
+
+#homeButton{
+  position: absolute;
+  left: 47.5vw;
+  top: 1vh;
+  width: 5vw;
+  height: 60px;
+  z-index: 1;
+  background-color: #2d1a3d;
+  border: 3px #e6e6e6 solid;
+  border-radius: 10px;
+  color: #e6e6e6;
+  font-family: 'Bungee', cursive;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+#homeButton:hover{
+  opacity: 0.75;
+}
+
+#name{
+  position: relative;
+  top: -30px;
+  font-size: 3rem;
+  font-family: 'Bungee', cursive;
+  color: #e6e6e6;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#title{
+  position: relative;
+  top: -70px;
+  font-size: 1rem;
+  left: 100px;
+  bottom: 30px;
+  color: #e6e6e6;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#footer{
+  position: absolute;
+  top: 97vh;
+  height: 3vh;
+  width: 100%;
+  background: #2d1a3d;
+  overflow: hidden;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+#footerText{
+  position: relative;
+  top: 30%;
+  padding-left: 20px;
+  color: #e6e6e6;
+}
+
+#diamondContainer{
+  position: absolute;
+  width: 500px;
+  height : 500px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-41%, -50%);
+}
+
+.diamond{
+  position: absolute;
+  stroke: white;
+  fill : transparent;
+  pointer-events: visible;
+  cursor: pointer;
+}
+
+#diamondText{
+  fill: white;
   color: white;
+  font-family: 'Bungee', cursive;
+  font-size: 1.4rem;
 }
 
-.App-link {
-  color: #61dafb;
+#aboutMeContainer{
+  width: 200px;
+  pointer-events:none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#blogContainer{
+  left: 205px;
+  width: 200px;
+  transform: scaleX(-1);
+  pointer-events:none;
+}
+
+#portfolioContainer{
+  top: 180px;
+  left: 102px;
+  width: 200px;
+  transform: rotate(60deg);
+  pointer-events:none;
+}
+
+#aboutMe{
+  transform: rotate(30deg);
+  pointer-events:all;
+}
+
+#blog{
+  transform: rotate(30deg);
+  pointer-events:all;
+}
+
+#portfolio{
+  transform: rotate(30deg);
+  pointer-events:all;
+}
+
+#aboutMeContainer:hover{
+  width: 250px;
+  right: 300px;
+  bottom: 122px;
+}
+
+#blogContainer:hover{
+  width: 250px;
+  right: 300px;
+  bottom: 122px;
+}
+
+#portfolioContainer:hover{
+  width: 250px;
+  top: 165px;
+  left: 78px;
+}
+
+#aboutMe:hover{
+  stroke:orange;
+  transition: stroke 2s ease;
+}
+
+#blog:hover{
+  stroke:orange;
+  transition: stroke 2s ease;
+}
+
+#portfolio:hover{
+  stroke:orange;
+  transition: stroke 2s ease;
+}
+
+.charStat{
+  color: rgb(250, 224, 175);
+  outline: 3px solid white;
+  margin-top: 1.5vh;
+  padding: 5px;
+  background: #342541;
+}
+
+#statpage1{
+  left: 1vw;
+  position: absolute;
+  width: 15vw;
+  display: inline-block;
+}
+
+#statpage2{
+  left: 89vw;
+  position: absolute;
+  width: 10vw;
+  display: inline-block;
+}
+
+#backgroundContainer{
+  position: absolute;
+  width: 58vw;
+  left: 21vw;
+  text-align: center;
+}
+
+#backgroundHeader{
+  color: orange;
+  font-size: 2rem;
+}
+
+#background{
+  font-size: 1rem;
+  color: #e6e6e6;
+  width: 58vw;
+  word-break: normal;
+  word-wrap: break-word;
+}
+
+#aboutMePage{
+  width: 100vw;
+  margin: 0;
 }
