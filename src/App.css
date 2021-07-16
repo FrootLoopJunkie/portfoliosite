@@ -225,3 +225,11 @@ p{
   width: 100vw;
   margin: 0;
 }
+
+.portfolioApp{
+  position: relative;
+  top: 0.5vh;
+  left: 5vw;
+  width: 90vw;
+  height: 82vh;
+}

@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import './App.css';
 import Homepage from './components/Homepage'
 import AboutMe from './components/AboutMe'
+import Portfolio from './components/Portfolio'
 
 class App extends Component {
   constructor(props){
@@ -45,6 +46,7 @@ class App extends Component {
           portfolioClickHandler = {this.portfolioClickHandler}
         />}
         {this.state.currentPage === 'aboutMe' && <AboutMe/>}
+        {this.state.currentPage === 'portfolio' && <Portfolio/>}
         <div id='footer'>
           <span id='footerText'>
           <a class='link' href='https://docs.google.com/document/d/1kRjimEuAwbmM3VPDxrxHSRK1NVXAOGRNYd6Gy4XKYyA/edit?usp=sharing'>Resume </a> 
