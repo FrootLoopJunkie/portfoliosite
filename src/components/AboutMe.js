@@ -4,7 +4,25 @@ class AboutMe extends Component {
     constructor(props){
         super(props);
         this.state = {
+            currentImage : 2
         };
+    }
+
+    changeImage(e){
+        console.log(e.target.id)
+        if(e.target.id === 'leftArrow'){
+            if(this.state.currentImage > 1){
+                this.setState({currentImage : this.state.currentImage - 1});
+            }else{
+                this.setState({currentImage : 3});
+            }
+        }else{
+            if(this.state.currentImage < 3){
+                this.setState({currentImage : this.state.currentImage + 1});
+            }else{
+                this.setState({currentImage : 1});
+            }
+        }
     }
 
     render(){
@@ -34,6 +52,9 @@ class AboutMe extends Component {
                          Currently, I work as an SEIR (Software Engineering Immersive Resident) for Galvanize Inc., 
                          though with a soon-to-be expiring contract, and an incredible drive to learn more and grow in this industry, I'm currently on the hunt for a long-term home. 
                     </p>
+                    <button class='arrow' id='leftArrow' onClick={(e) => {this.changeImage(e)}}>Left Arrow</button>
+                    <img src={`./../images/aboutmeP${this.state.currentImage}.jpg`} class='aboutMeImage'></img>
+                    <button class='arrow' id='rightArrow' onClick={(e) => {this.changeImage(e)}}>Right Arrow</button>
                 </div>
                 <div id='statpage2'>
                     <p class='charStat'>Strength: 15</p>
