@@ -247,6 +247,17 @@ p{
 .arrow{
   position: relative;
   bottom: 18vh;
+  cursor: pointer;
+  border: 3px solid #e6e6e6;
+  padding: 3px;
+  background: transparent;
+  color: #e6e6e6;
+  border-radius: 10px;
+}
+
+.arrow:hover{
+  border-color: orange;
+  transition: all 2s ease;
 }
 
 #leftArrow{
