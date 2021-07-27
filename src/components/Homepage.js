@@ -9,7 +9,6 @@ class Homepage extends Component {
 
     render(){
         return(
-            <div>
                 <div id='diamondContainer'>
                     <svg id='aboutMeContainer' class='diamond' viewBox="-4 84 100 174" onClick={() => {this.props.aboutMeClickHandler()}}>
                         <polygon id='aboutMe' fill="#645184"  stroke-width="3" stroke-miterlimit="10" points="69.445,125 125,28.774 180.556,125 125,221.227'"/>
@@ -24,7 +23,6 @@ class Homepage extends Component {
                         <text id="diamondText" x="-125%" y="72%" dominant-baseline="middle" text-anchor="middle" transform="rotate(-60)">Portfolio</text>
                     </svg>
                 </div>
-            </div>
         )
     }
 }

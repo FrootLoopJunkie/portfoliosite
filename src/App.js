@@ -39,7 +39,7 @@ class App extends Component {
           {this.state.currentPage !== 'home' && <button id='homeButton' onClick={() => {this.homeButton()}}>Home</button>}
           {this.state.currentPage === 'home' && <h1 id="name">Kolby Evans</h1>}
           {this.state.currentPage === 'home' && <p id="title">-Software Engineer</p>}
-        </div>
+        </div> 
         {this.state.currentPage === 'home' && <Homepage
           aboutMeClickHandler = {this.aboutMeClickHandler}
           blogClickHandler = {this.blogClickHandler}

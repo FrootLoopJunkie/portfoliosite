@@ -16,9 +16,10 @@ class Portfolio extends Component {
         return(
             <div>
                 <div id='portfolioMenu'>
-                    <button onClick={(e) => {this.handleButton(e)}}>Rocket Clicker</button>
-                    <button onClick={(e) => {this.handleButton(e)}}>Pixel-Art-O-Matic</button>
-                    <button onClick={(e) => {this.handleButton(e)}}>Invisify</button>
+                    <h1 id="portfolioHeader">My Applications *Note: Only Invisify properly scales with browser</h1>
+                    <button className="portfolioButton" onClick={(e) => {this.handleButton(e)}}>Rocket Clicker</button>
+                    <button className="portfolioButton" onClick={(e) => {this.handleButton(e)}}>Pixel-Art-O-Matic</button>
+                    <button className="portfolioButton" onClick={(e) => {this.handleButton(e)}}>Invisify</button>
                 </div>
                 {this.state.currentApplication === 'Rocket Clicker' && <iframe class='portfolioApp' src='http://rocketclicker.surge.sh/'></iframe>}
                 {this.state.currentApplication === 'Pixel-Art-O-Matic' && <iframe class='portfolioApp' src='http://pixelartomatic.surge.sh/'></iframe>}
