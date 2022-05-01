@@ -54,7 +54,7 @@ class AboutMe extends Component {
                          <br></br>
                          <br></br>
                          Currently, I'm pursuing a degree in Computer Science while also looking to start my carrer in the industry. I know that I bring a lot to the table, but I also know that I have a lot
-                         to learn, I'm looking for somewhere where I can grow as a Software Engineer and hopefully call home.  
+                         to learn, I'm looking for somewhere where I can grow as a Software Engineer and hopefully call home.   TEST
                     </p>
                     <button class='arrow' id='leftArrow' onClick={(e) => {this.changeImage(e)}}>Left Arrow</button>
                     <img src={`./../images/aboutmeP${this.state.currentImage}.jpg`} class='aboutMeImage'></img>
