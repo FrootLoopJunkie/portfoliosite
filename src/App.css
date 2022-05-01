@@ -95,7 +95,7 @@ p{
   position: absolute;
   top:8.7vmax;
   left: 5vw;
-  width: 10vw;
+  width: 10vmax;
   transform: rotate(60deg);
   pointer-events:none;
 }

@@ -46,11 +46,15 @@ class AboutMe extends Component {
                          <br></br>
                                 I served in Texas as well as S. Korea, and was given a lot of time to think about the carreer I wanted post Army.
                          I decided to revisit Software Engineering and to do it right, I took an 18-week full-stack Javascript Bootcamp during my transition out of the Army and pushed myself 
-                         to absorb as much knowledge as I could. 
+                         to absorb as much knowledge as I could.
                          <br></br>
                          <br></br>
-                         Currently, I work as an SEIR (Software Engineering Immersive Resident) for Galvanize Inc., 
-                         though with a soon-to-be expiring contract, and an incredible drive to learn more and grow in this industry, I'm currently on the hunt for a long-term home. 
+                            After graduating from Galvanize I was taken abord as an SEIR where I continued to grow as a Software Engineer. My day-to-day consisted of mentoring 
+                        studedents, grading assignments, and being the connecting point between the staff and students.
+                         <br></br>
+                         <br></br>
+                         Currently, I'm pursuing a degree in Computer Science while also looking to start my carrer in the industry. I know that I bring a lot to the table, but I also know that I have a lot
+                         to learn, I'm looking for somewhere where I can grow as a Software Engineer and hopefully call home.  
                     </p>
                     <button class='arrow' id='leftArrow' onClick={(e) => {this.changeImage(e)}}>Left Arrow</button>
                     <img src={`./../images/aboutmeP${this.state.currentImage}.jpg`} class='aboutMeImage'></img>
